@@ -233,31 +233,39 @@ p, a {
 }
 
 /* RESERVATION FORM */
-#reservation {
+.reservation {
     width:85%;
     margin:-3em auto 4em auto;
     font-family: Raleway, sans-serif;
 }
-#reservation label, #reservation p {
+
+form {
+    overflow:auto;
+}
+
+ 
+
+
+form label, .reservation p {
     display:block;
     width:100%;
     font-weight: 700;
-    margin-bottom:0.5em;
+    margin-bottom:1em;
 }
 
-#reservation p {
+.reservation p {
     text-align:center;
 }
-#reservation input[type="submit"] {
+form input[type="submit"] {
     text-transform:uppercase;
     font-weight:700;
     background-color:#c7a17a;
     padding:1em;
 }
-#reservation h3 {
+.reservation h3 {
     text-align:center;
 }
-#reservation h3::after {
+.reservation h3::after {
     content:"";
     background-image:url('images/reservation-cards.png');
     height:30px;
@@ -274,20 +282,100 @@ p, a {
     float:left;
     padding:2em;
     box-sizing:border-box;
+    border-radius:5px;
 }
 .form-group1 {
     margin-right:1%;
 }
-#reservation input, 
-#reservation select,
-#reservation textarea {
+form input, 
+form select,
+form textarea {
   display:block;
   width:100%;
   margin-bottom:0.5em;
   padding:1em;
 } 
 
-#radio-buttons label, .radio{
+
+
+.radio-buttons {
+    text-align:center;
+}
+.radio-buttons label, .radio-buttons input {
     display:inline;
+    width:auto;
+}
+.agree-box {
+text-align:left;
+}
+.agree-box label, .agree-box input {
+    display:inline;
+    width: auto;
+}
+/* FOOTER */
+#footer {
+    width:100%;
+    background-image:url('images/footer-img.jpg');
+    background-size:cover;
+    background-position: center center;
+    padding-top: 3em;
+    padding-bottom:1em;
+
+}
+.footer-widgets h3,
+.footer-widgets h4,
+.footer-widgets th,
+.footer-widgets td {
+    color: #fff;
+}
+.footer-widgets td,
+.footer-widgets th {
+ font-family: Raleway, sans-serif;
+ padding:0;
+}
+
+.footer-widgets p {
+    color:#c7a17a;
+}
+.footer-widgets h3 {
+    text-transform:uppercase;
+    padding-bottom:1em;
+}
+.footer-contents {
+    width: 85%;
+    margin:2em auto;
+    overflow:auto;
+}
+.footer-widgets {
+    float:left;
+    width:23.25%;
+    margin-right:1%;
+}
+.footer-contents:nth-child(4) {
+    margin-right:0;
+}
+.footer-widgets input[type="submit"] {
+  width: auto;
+}
+.footer-social {
+    width:100%;
+    background-color: #19100F;
+    overflow:auto;
+    padding:1em 0;
+}
+.footer-social img {
+    width:1.5em;
+    height:1.5em;
+    object-fit:contain;
+}
+.footer-social p{
+    color:#fff;
+}
+.footer-social .footer-widghets {
+    width:23%;
+    margin-left:7.75%;
+}
+.footer-widgets table{
+    width:100%;
 }
 
